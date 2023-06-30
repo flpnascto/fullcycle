@@ -2,13 +2,19 @@ version: '3'
 
 services: 
   laravel:
+    build:
+      context: ./laravel
+      dockerfile: Dockerfile.prod
     image: flpnascto/laravel:prod
     container_name: laravel
     networks: 
       - laranet
 
   nginx:
-    image: flpnascto/nginx:latest
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile.prod
+    image: flpnascto/nginx:prod
     container_name: nginx
     networks: 
       - laranet
