@@ -33,3 +33,13 @@ possibilita a comunicação de containers que estejam em máquinas diferentes (d
 ### none
 
 não cria rede
+
+## Dependência entre containers
+
+### Dockerize
+
+- [Documentação](https://github.com/jwilder/dockerize)
+
+### Wait-for-it
+
+- [Documentação](https://github.com/codeedu/docker-wait-for-it)
