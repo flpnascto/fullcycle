@@ -22,3 +22,13 @@ Suba o projeto em um repositório Git remoto e coloque o link da imagem que subi
 Compartilhe o link do repositório do Git remoto para corrigirmos seu projeto.
 
 Divirta-se!
+
+## Resolução
+
+Link da imagem no Docker Hub: [flpnascto/fullcycle_desafio-go](https://hub.docker.com/r/flpnascto/fullcycle_desafio-go)
+
+Para inciar um container com esta image, execute o comando abaixo:
+
+```sh
+docker run flpnascto/fullcycle_desafio-go
+```
