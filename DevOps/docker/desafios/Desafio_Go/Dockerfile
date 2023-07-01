@@ -9,9 +9,7 @@ COPY ./hello/hello.go .
 
 RUN go build -o .
 
-FROM gcr.io/distroless/static-debian11
-
-WORKDIR /root
+FROM scratch
 
 COPY --from=builder /root/hello .
 
