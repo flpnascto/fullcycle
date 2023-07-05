@@ -9,19 +9,23 @@ services:
     ports: 
       - "8080:80"
     depends_on:
-      - app
+      app:
+        condition: service_healthy
 
   app:
     build: ./node
     container_name: app
-    entrypoint: sh -c '/usr/bin/wait-for db:3306 -t 10 -- docker-entrypoint.sh'
+    entrypoint: wait-for db:3306 -t 40 -- sh -c 'npm install && npm start'
     networks: 
       - node-network
-    volumes: 
+    volumes:
       - ./node:/usr/src/app
-    tty: true
-    ports: 
-      - "3000:3000"
+    healthcheck:
+      test: curl --fail http://localhost:3000
+      interval: 10s
+      timeout: 15s
+      retries: 5
+      start_period: 10s
     depends_on:
       - db
 
@@ -31,7 +35,6 @@ services:
     command: --innodb-use-native-aio=0
     container_name: db
     restart: always
-    tty: true
     volumes: 
       - ./mysql:/var/lib/mysql
     environment: 
