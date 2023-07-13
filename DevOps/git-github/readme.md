@@ -67,7 +67,7 @@ git config --global tag.gpgsign true
 
 - Configurar para não pedir a senha da chave toda vez que for fazer um _commit_ ou _tag_ com o comando:
 
-  - Abrir o arquivo `~/.gnupg/gpp.conf` e adicionar a linha: `use-agent` e salvar;
+  - Abrir o arquivo `~/.gnupg/gpg.conf` e adicionar a linha: `use-agent` e salvar;
 
   - Executar o comando:
 
@@ -75,8 +75,9 @@ git config --global tag.gpgsign true
     gpgconf --launch gpg-agent
     ```
 
-
 ## Pull Requests / Templates para PR
+
+Criar o arquivo `PULL_REQUEST_TEMPLATE.md` no diretório `./.github`.
 
 ## Code Review
 
