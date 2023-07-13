@@ -20,8 +20,8 @@ Escolha sua linguagem preferida e aprenda a desenvolver soluções de grande por
 
 ## ✨ Módulos
 
-- ⏹️ Docker
-- ⏹️ Padrões e técnicas avançadas com Git e GitHub
+- ▶️ [Docker](./DevOps/docker/readme.md)
+- ▶️ [Padrões e técnicas avançadas com Git e GitHub](./DevOps/git-github/readme.md)
 - ⏹️ Integração contínua
 - ⏹️ Kubernetes
 - ⏹️ Service Mesh com Istio

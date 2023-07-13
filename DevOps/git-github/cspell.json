@@ -1,0 +1,10 @@
+{
+  "import": [
+    "../../.cspell.json"
+  ],
+  "words": [
+    "CODEOWNERS",
+    "commitlint",
+    "commitsar"
+  ]
+}
