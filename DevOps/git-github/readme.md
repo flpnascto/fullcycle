@@ -94,3 +94,30 @@ Criar o arquivo `CODEOWNERS` no diretório `./.github`.
 ```
 
 ## SemVer
+
+Semantical Versioning
+v: 2.1.4
+(2) Major: Mudanças incompatíveis com a versão anterior
+(1) Minor: Novas funcionalidades sem quebrar a compatibilidade
+(4) Patch: Correção de bugs, ajustes de código, etc
+
+Se a MAJOR = 0, então o projeto está em desenvolvimento e não é estável.
+
+Referência: [SemVer](https://semver.org/lang/pt-BR/)
+
+## Conventional Commits
+
+Referência: [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
+
+- Opção 1: Utilizar a biblioteca [commitlint](https://commitlint.js.org/#/) para validar os commits no momento em que se realiza o commit. Necessário o [Husk](https://typicode.github.io/husky/#/) para automatizar o processo.
+
+- Opção 2: Utilizar o [commitsar](https://github.com/aevea/commitsar)
+Criar o container com o comando:
+
+  ```sh
+  docker run --rm --name="commitsar" -w /src -v "$(pwd):/src"  aevea/commitsar commitsar .
+  ```
+
+  É interessante usar como CI no GitHub Actions para garantir que os commits sejam compatíveis com o Conventional Commits.
+
+- Opção 3: Utilizar o [commitizen](https://github.com/commitizen/cz-cli) para guiar, no terminal, a criação da mensagem do _commit_.

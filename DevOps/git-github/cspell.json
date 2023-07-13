@@ -3,6 +3,8 @@
     "../../.cspell.json"
   ],
   "words": [
-    "CODEOWNERS"
+    "CODEOWNERS",
+    "commitlint",
+    "commitsar"
   ]
 }
