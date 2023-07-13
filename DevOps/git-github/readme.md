@@ -1,4 +1,18 @@
-# Padrões e técnicas avançadas com Git e Github
+# ![Git](logo.png)
+
+## Padrões e técnicas avançadas com Git e Github
+
+- Regras importante para os branches
+- CODEOWNERS
+- Configuração do processo de Code
+- Review
+- Geração de Tags e Releases
+- Bumb versioning
+- Assinatura de commits
+- Semantical versioning
+- Conventional Commits
+
+---
 
 ## Git Flow
 

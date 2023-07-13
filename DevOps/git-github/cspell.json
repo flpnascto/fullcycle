@@ -3,8 +3,16 @@
     "../../.cspell.json"
   ],
   "words": [
+    "aevea",
+    "Bumb",
     "CODEOWNERS",
     "commitlint",
-    "commitsar"
+    "commitsar",
+    "Gitflow",
+    "gnupg",
+    "gpgconf",
+    "gpgsign",
+    "keyid",
+    "signingkey"
   ]
 }

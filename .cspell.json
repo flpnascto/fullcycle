@@ -5,6 +5,7 @@
   "language": "en,pt-BR",
   // words - list of words to be always considered correct
   "words": [
+    "Codeflix",
     "CodeFlix"
   ],
   // flagWords - list of words to be always considered incorrect
