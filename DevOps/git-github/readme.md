@@ -81,8 +81,16 @@ Criar o arquivo `PULL_REQUEST_TEMPLATE.md` no diretório `./.github`.
 
 ## Code Review
 
-## Plugin para VSCode
+Plugin para VSCode: **_GitHub Pull Requests and Issues_**
 
 ## CODEOWNERS
+
+Criar o arquivo `CODEOWNERS` no diretório `./.github`.
+
+```sh
+*.js @github_use_name # os arquivos com extensão .js serão revisados pelo usuário @github_use_name
+.github/* @github_use_name # os arquivos do diretório .github serão revisados pelo usuário @github_use_name
+*.ts @group-x @group-y # os arquivos com extensão .ts serão revisados pelos usuários do grupo @grupo-x e @group-y
+```
 
 ## SemVer
